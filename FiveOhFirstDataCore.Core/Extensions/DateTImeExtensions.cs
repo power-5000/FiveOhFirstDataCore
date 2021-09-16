@@ -37,5 +37,25 @@
 
             return false;
         }
+
+        public static DateTime StartOfMonth(this DateTime date)
+        {
+            return new DateTime(date.Year, date.Month, 1);
+        }
+
+        public static DateTime StartOfWeek(this DateTime date)
+        {
+            return new DateTime(date.Year, date.Month, date.Day).AddDays(-(int)date.DayOfWeek);
+        }
+
+        public static DateTime EndOfMonth(this DateTime date)
+        {
+            return new DateTime(date.Year, date.Month, 1).AddMonths(1).Subtract(new TimeSpan(0,0,0,0,1));
+        }
+
+        public static DateTime EndOfWeek(this DateTime date)
+        {
+            return new DateTime(date.Year, date.Month, date.Day).AddDays(7-(int)date.DayOfWeek);
+        }
     }
 }

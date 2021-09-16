@@ -1,0 +1,33 @@
+﻿
+<div class="container-fluid bg-light">
+    <div class="row">
+        <div class="col-md-4 text-center text-md-start">
+            <div class="btn-group" role="group" aria-label="Previous Next Button">
+                <button type="button" class="btn btn-primary">
+                    <span class="oi oi-chevron-left" aria-aria-hidden="true"></span>
+                </button>
+                <button type="button" class="btn btn-primary">
+                    <span class="oi oi-chevron-right" aria-aria-hidden="true"></span>
+                </button>
+            </div>
+            <button class="btn btn-primary">Today</button>
+        </div>
+        <div class="col-md-4 text-center text-md-center">
+            <div class="fs-4">@SelectedView?.Text</div>
+        </div>
+        <div class="col-md-4 text-center text-md-end">
+        
+            <div class="btn-group" role="group" aria-label="View Selection">
+                @foreach (ICalendarView view in CalendarViews)
+                {
+                    <button type="button" class="btn btn-primary">
+                    @view.Title
+                    </button>
+                }
+            </div>
+        </div>
+    </div>
+    <div class="row">
+       
+    </div>
+</div>
