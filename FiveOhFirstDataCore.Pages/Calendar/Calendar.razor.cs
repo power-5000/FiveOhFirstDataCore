@@ -1,17 +1,14 @@
 ﻿using FiveOhFirstDataCore.Core.Data.Calendar;
 using Microsoft.AspNetCore.Components;
-using System;
-using System.Collections.Generic;
-using System.Threading.Tasks;
 
 namespace FiveOhFirstDataCore.Pages.Calendar;
 
-public partial class Calendar : ICalendar
+public partial class Calendar : ComponentBase, ICalendar
 {
-    public ICalendarView SelectedView { get; set; }
-    public DateTime CurrentDate { get; set; } = DateTime.Now.Date;
-    [Parameter]
+    public DateTime CurrentDate { get; set; } = DateTime.Today;
     public IList<ICalendarView> CalendarViews { get; set; } = new List<ICalendarView>();
+    public int SelectedView {  get; set; } 
+    private ICalendarView CalendarView => CalendarViews.ElementAtOrDefault(SelectedView);
 
 
     public Task AddView(ICalendarView view)
@@ -61,4 +58,5 @@ public partial class Calendar : ICalendar
     {
         throw new NotImplementedException();
     }
+
 }

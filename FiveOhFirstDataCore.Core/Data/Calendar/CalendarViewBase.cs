@@ -11,9 +11,7 @@ namespace FiveOhFirstDataCore.Core.Data.Calendar
     {
         public abstract string Title { get; set; }
         public abstract string Text { get; }
-
-        [CascadingParameter]
-        public ICalendar Calendar { get; set; }
+        public abstract ICalendar Calendar { get; set; }
 
         public void Dispose()
         {
@@ -21,13 +19,10 @@ namespace FiveOhFirstDataCore.Core.Data.Calendar
             Calendar?.RemoveView(this);
         }
 
-        public override async Task SetParametersAsync(ParameterView parameters)
+        protected override Task OnInitializedAsync()
         {
-            //TODO: check if Title changed
-
-            await base.SetParametersAsync(parameters);
-
-            await Calendar.AddView(this);
+            Calendar?.AddView(this);
+            return Task.CompletedTask;
         }
 
         public abstract DateTime Next();
