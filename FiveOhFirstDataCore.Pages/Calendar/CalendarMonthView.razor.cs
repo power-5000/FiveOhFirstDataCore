@@ -7,13 +7,11 @@ namespace FiveOhFirstDataCore.Pages.Calendar;
 public partial class CalendarMonthView
 {
     public override string Text => Calendar.CurrentDate.ToString("MMMM yyyy");
-    [Parameter]
     public override string Title { get; set; } = "Month";
+    [Parameter]
     public override ICalendar Calendar { get; set; }
     public override DateTime StartDate => Calendar.CurrentDate.StartOfMonth();
     public override DateTime EndDate => Calendar.CurrentDate.EndOfMonth();
-
-
 
     public override DateTime Next()
     {

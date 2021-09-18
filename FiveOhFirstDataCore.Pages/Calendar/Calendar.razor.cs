@@ -1,62 +1,52 @@
-﻿using FiveOhFirstDataCore.Core.Data.Calendar;
-using Microsoft.AspNetCore.Components;
+﻿using Microsoft.AspNetCore.Components;
+using FiveOhFirstDataCore.Core.Extensions;
 
 namespace FiveOhFirstDataCore.Pages.Calendar;
 
-public partial class Calendar : ComponentBase, ICalendar
+public partial class Calendar
 {
+    private enum ECalendarViews
+    {
+        MonthView,
+        WeekView,
+        DayView,
+        ListView
+    }
+
+    [Parameter]
+    public bool ShowMonthView { get; set; } = true;
+    [Parameter]
+    public bool ShowWeekView { get; set; } = true;
+    [Parameter]
+    public bool ShowDayView { get; set; } = true;
+    [Parameter]
+    public bool ShowListView { get; set; } = true;
+    public DateTime StartDate {  get; set; }
+    public DateTime EndDate {  get; set; }
     public DateTime CurrentDate { get; set; } = DateTime.Today;
-    public IList<ICalendarView> CalendarViews { get; set; } = new List<ICalendarView>();
-    public int SelectedView {  get; set; } 
-    private ICalendarView CalendarView => CalendarViews.ElementAtOrDefault(SelectedView);
+    public int SelectedView {  get; set; }
 
-
-    public Task AddView(ICalendarView view)
+    protected override void OnParametersSet()
     {
-        if (!CalendarViews.Contains(view))
-        {
-            CalendarViews.Add(view);
-        }
-        return Task.CompletedTask;//TODO
+        StartDate = CurrentDate.StartOfMonth();
+        EndDate = CurrentDate.EndOfMonth();
     }
 
-    public IEnumerable<CalendarEventData> GetEventsInRange(DateTime start, DateTime end)
+    public void Today()
     {
-        throw new NotImplementedException();
+        StartDate = CurrentDate.StartOfMonth();
+        EndDate = CurrentDate.EndOfMonth();
     }
 
-    public bool IsEventInRange(CalendarEventData item, DateTime start, DateTime end)
+    public void Next()
     {
-        if (item.StartTime == item.EndTime && item.StartTime >= start && item.EndTime < end)
-        {
-            return true;
-        }
-        return item.EndTime > start && item.StartTime < end;
+        StartDate = StartDate.StartOfMonth().AddMonths(1);
+        EndDate = EndDate.StartOfMonth().AddMonths(1);
     }
 
-    public bool IsSelected(ICalendarView view)
+    public void Previous()
     {
-        throw new NotImplementedException();
+        StartDate = StartDate.StartOfMonth().AddMonths(-1);
+        EndDate = EndDate.StartOfMonth().AddMonths(-1);
     }
-
-    public Task Reload()
-    {
-        throw new NotImplementedException();
-    }
-
-    public void RemoveView(ICalendarView view)
-    {
-        throw new NotImplementedException();
-    }
-
-    public Task SelectEvent(CalendarEventData data)
-    {
-        throw new NotImplementedException();
-    }
-
-    public Task SelectSlot(DateTime start, DateTime end)
-    {
-        throw new NotImplementedException();
-    }
-
 }
