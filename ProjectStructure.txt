@@ -1,0 +1,75 @@
+FoFDC // Contains All loadable pages and Website files
+	-Properties
+
+	-wwwroot // Root website files (.js, .css, static images)
+
+	-Api // Contains API to connect to Steam and Discord
+		
+	-Areas // Contains MVC files for login and account settings
+		
+	-Config // Contains Configs for dev database
+		
+	-Data // Contains upload data?
+		
+	-Development // Contains upload data during development?
+		
+	-Examples // Sample Database files
+		
+	-Local // Contains layout files for Blazor (.razor) files
+		
+	-Models // *shrugs*
+		
+	-Pages // Contains All routed Blazor pages
+		
+	_Imports.cs // Global using terms for .cs files
+		
+	_Imports.razor // Global using terms for Blazor files
+
+	// Main program files
+	App.razor
+	Program.cs
+	Startup.cs
+
+	// Stuff.
+	libman.json
+	// Config file
+	appsettings.json
+	appsettings.development.json
+
+FoFDC.Data // Contains all server side assets and functionality of the website. 
+	-Account // Account information related to Trooper
+		
+	-Components // Pure .cs component files (simillar to the FoFDC.Components project but without the HTML frontend)
+		
+	-Database // Contains class for interactions with Database
+		
+	-Extensions // Extensions methods
+		
+	-Mail // Mail services
+		
+	-Migrations // Contains Migrations for the DB
+		
+	-Services // Serivces that utilize DI
+		
+	-Structures // All data files (consolidated with .Data)
+		
+	_Imports.cs // Global using terms for CS files
+
+FoFDC.Components // Contains all Blazor components that are used with the UI Project.
+	-Calendar // Calendar Components
+
+	-Data // Misc data displays
+		
+	-Message // Message components for the message board system
+		
+	-Misc // Misc components such as breadcrumb, NotAuthorizedMessage and RankDisplay (single use, not related to displaying items from the FoFDC.Data.Structures folder)
+		
+	-Notice // NoticeBoard Components
+		
+	-Promotions // Promotion Components
+		
+	-Roster // Roster Components
+		
+	_Imports.cs // Global using terms for CS files
+		
+	_Imports.razor // Global using terms for Blazor files
