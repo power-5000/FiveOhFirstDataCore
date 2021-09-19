@@ -1,8 +1,8 @@
-﻿using FiveOhFirstDataCore.Core.Data.Calendar;
-using FiveOhFirstDataCore.Core.Extensions;
+﻿using FiveOhFirstDataCore.Data.Structures.Calendar;
+using FiveOhFirstDataCore.Data.Extensions;
 using Microsoft.AspNetCore.Components;
 
-namespace FiveOhFirstDataCore.Pages.Calendar;
+namespace FiveOhFirstDataCore.Components.Calendar;
 
 public partial class CalendarMonthView
 {

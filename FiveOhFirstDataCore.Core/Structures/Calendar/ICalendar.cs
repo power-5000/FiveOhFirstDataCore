@@ -1,4 +1,4 @@
-﻿namespace FiveOhFirstDataCore.Core.Data.Calendar;
+﻿namespace FiveOhFirstDataCore.Data.Structures.Calendar;
 //TODO: docs
 public interface ICalendar
 {

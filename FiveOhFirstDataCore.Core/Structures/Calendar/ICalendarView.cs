@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FiveOhFirstDataCore.Core.Data.Calendar
+namespace FiveOhFirstDataCore.Data.Structures.Calendar
 {
     /// <summary>
     /// A view for a Calendar Component. This allows implementation of a month or week view for example.

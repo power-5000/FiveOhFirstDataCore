@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FiveOhFirstDataCore.Core.Data.Calendar
+namespace FiveOhFirstDataCore.Data.Structures.Calendar
 {
     public abstract class CalendarViewBase : ComponentBase, ICalendarView, IDisposable
     {

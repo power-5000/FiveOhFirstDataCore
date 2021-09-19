@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Components;
-using FiveOhFirstDataCore.Core.Extensions;
+using FiveOhFirstDataCore.Data.Extensions;
 
-namespace FiveOhFirstDataCore.Pages.Calendar;
+namespace FiveOhFirstDataCore.Components.Calendar;
 
 public partial class Calendar
 {

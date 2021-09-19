@@ -1,4 +1,4 @@
-﻿namespace FiveOhFirstDataCore.Pages.Calendar;
+﻿namespace FiveOhFirstDataCore.Components.Calendar;
 
     public partial class CalendarHome
     {
