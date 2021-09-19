@@ -17,8 +17,6 @@ FoFDC // Contains All loadable pages and Website files
 		
 	-Local // Contains layout files for Blazor (.razor) files
 		
-	-Models // *shrugs*
-		
 	-Pages // Contains All routed Blazor pages
 		
 	_Imports.cs // Global using terms for .cs files
