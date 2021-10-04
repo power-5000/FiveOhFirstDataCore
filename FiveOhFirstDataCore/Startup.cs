@@ -66,6 +66,7 @@ namespace FiveOhFirstDataCore
             services.AddRazorPages();
             services.AddServerSideBlazor();
             services.AddScoped<AuthenticationStateProvider, RevalidatingIdentityAuthenticationStateProvider<Trooper>>();
+            services.AddScoped<ITimeZoneService, TimeZoneService>();
 #if DEBUG
             services.AddDatabaseDeveloperPageExceptionFilter();
 #endif

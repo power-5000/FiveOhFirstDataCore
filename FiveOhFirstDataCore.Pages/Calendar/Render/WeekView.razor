@@ -1,0 +1,37 @@
+﻿@namespace FiveOhFirstDataCore.Components.Calendar.Render
+
+<div class="calendar-view calendar-week-view">
+    <div class="calendar-view-header">
+        <div class="calendar-view-header-hour"></div>
+        @for (var day = StartDate; day < EndDate; day = day.AddDays(1))
+        {
+            <div class="calendar-header-slot">@day.ToString("ddd")</div>
+        }
+    </div>
+    <div class="calendar-view-content">
+        <Hours Start="StartTime" End="EndTime"></Hours>
+        <div class="calendar-week-view-content">
+            @for (var day = StartDate; day < EndDate; day = day.AddDays(1))
+            {
+                var start = day.Add(StartTime);
+                var end = day.Add(EndTime);
+                <div class="calendar-slots">
+                    <DaySlotEvents StartDate=@start EndDate=@end Events=@Events/>
+                    @for (var date = start; date < end; date = date.AddMinutes(30))
+                    {
+                        var slotDate = date;
+
+                        @if (date.Minute == 30)
+                        {
+                            <div class="rz-slot rz-slot-minor" @onclick=@(() => OnSlotClick(slotDate))></div>
+                        }
+                        else
+                        {
+                            <div class="rz-slot" @onclick=@(() => OnSlotClick(slotDate))></div>
+                        }
+                    }
+                </div>
+            }
+        </div>
+    </div>
+</div>

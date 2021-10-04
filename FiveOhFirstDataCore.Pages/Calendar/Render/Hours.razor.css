@@ -1,0 +1,11 @@
+﻿.calendar-slot-hours {
+}
+
+    .calendar-slot-hours .calendar-slot-header {
+        height: 1.5em;
+        text-align: right;
+        padding: 0 4px;
+        width: 80px;
+        border-right: 1px solid #dfe7eb;
+        white-space: nowrap;
+    }

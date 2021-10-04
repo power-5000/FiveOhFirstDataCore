@@ -1,5 +1,12 @@
 ﻿@page "/calendar"
-<h3>CalendarHome</h3>
-@*have to setup logic *@
-<Calendar>
+@namespace FiveOhFirstDataCore.Components.Calendar
+
+<p>UTC: @DateTime.UtcNow.ToString("T") </p>
+<p>EST: @DateTime.UtcNow.ToEst().ToString("T") </p>
+<p>Local: @Mytime.ToString("T") </p>
+
+
+<Calendar Name="Main">
+    <CalendarMonthView/>
+    <CalendarWeekView/>
 </Calendar>

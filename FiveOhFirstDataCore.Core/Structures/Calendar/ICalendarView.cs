@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Microsoft.AspNetCore.Components;
 
 namespace FiveOhFirstDataCore.Data.Structures.Calendar
 {
@@ -37,5 +33,7 @@ namespace FiveOhFirstDataCore.Data.Structures.Calendar
         /// </summary>
         /// <returns>A DateTime for the last period for this View</returns>
         public DateTime Previous();
+        //TODO: Add docs
+        public RenderFragment Render();
     }
 }

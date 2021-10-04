@@ -21,7 +21,53 @@
       <name>Calendar</name>
       <folders>
         <Folder>
-          <name>Cal-Main</name>
+          <name>Pop</name>
+          <folders />
+          <favorites>
+            <Favorite>
+              <name>ICalendarView.cs</name>
+              <path>FiveOhFirstDataCore.Core\Structures\Calendar\ICalendarView.cs</path>
+              <absolutePath>C:\Users\power\source\repos\power-5000\FiveOhFirstDataCore\FiveOhFirstDataCore.Core\Structures\Calendar\ICalendarView.cs</absolutePath>
+              <position>
+                <line>1</line>
+                <column>1</column>
+                <lineHash>g2bAALQMccIdADo56GBkD7Az+UcfyuV+u4VcKaBi3R0=</lineHash>
+              </position>
+            </Favorite>
+            <Favorite>
+              <name>ICalendar.cs</name>
+              <path>FiveOhFirstDataCore.Core\Structures\Calendar\ICalendar.cs</path>
+              <absolutePath>C:\Users\power\source\repos\power-5000\FiveOhFirstDataCore\FiveOhFirstDataCore.Core\Structures\Calendar\ICalendar.cs</absolutePath>
+              <position>
+                <line>1</line>
+                <column>1</column>
+                <lineHash>9KQx2tTCbnwSm6f9dwq7vo1h+9IX3qhLCUU5tRqPK2Y=</lineHash>
+              </position>
+            </Favorite>
+            <Favorite>
+              <name>CalendarViewBase.cs</name>
+              <path>FiveOhFirstDataCore.Core\Structures\Calendar\CalendarViewBase.cs</path>
+              <absolutePath>C:\Users\power\source\repos\power-5000\FiveOhFirstDataCore\FiveOhFirstDataCore.Core\Structures\Calendar\CalendarViewBase.cs</absolutePath>
+              <position>
+                <line>1</line>
+                <column>1</column>
+                <lineHash>g2bAALQMccIdADo56GBkD7Az+UcfyuV+u4VcKaBi3R0=</lineHash>
+              </position>
+            </Favorite>
+            <Favorite>
+              <name>CalendarEventData.cs</name>
+              <path>FiveOhFirstDataCore.Core\Structures\Calendar\CalendarEventData.cs</path>
+              <absolutePath>C:\Users\power\source\repos\power-5000\FiveOhFirstDataCore\FiveOhFirstDataCore.Core\Structures\Calendar\CalendarEventData.cs</absolutePath>
+              <position>
+                <line>1</line>
+                <column>1</column>
+                <lineHash>9KQx2tTCbnwSm6f9dwq7vo1h+9IX3qhLCUU5tRqPK2Y=</lineHash>
+              </position>
+            </Favorite>
+          </favorites>
+        </Folder>
+        <Folder>
+          <name>Main</name>
           <folders />
           <favorites>
             <Favorite>
@@ -29,9 +75,9 @@
               <path>FiveOhFirstDataCore\Pages\Calendar\CalendarHome.razor</path>
               <absolutePath>C:\Users\power\source\repos\power-5000\FiveOhFirstDataCore\FiveOhFirstDataCore\Pages\Calendar\CalendarHome.razor</absolutePath>
               <position>
-                <line>4</line>
-                <column>11</column>
-                <lineHash>+nau5tIMmm9thvCQyKQerLercy/vVqPP9kcjCayr1pI=</lineHash>
+                <line>1</line>
+                <column>1</column>
+                <lineHash>Ocf4IFl+Nc70mXobehC25cSEG4MlvqDF1Nb6wco83QU=</lineHash>
               </position>
             </Favorite>
             <Favorite>
@@ -41,7 +87,7 @@
               <position>
                 <line>1</line>
                 <column>1</column>
-                <lineHash>M9i0GxlvzttFFk8HFhvCuuNvHr3D3EBIMRfw4rhAof0=</lineHash>
+                <lineHash>grFE6u+GdDUY9aViQyRb5CcaMm14uZ71juZK7R6jr/g=</lineHash>
               </position>
             </Favorite>
             <Favorite>
@@ -51,7 +97,7 @@
               <position>
                 <line>1</line>
                 <column>1</column>
-                <lineHash>st81CEYSGyqCe0vIiJ5269GOg6/M/BFcwb/zgslpZE0=</lineHash>
+                <lineHash>+Cht3AHiFByYnBnmvTANEJ20GD0JWoR1RNs6tGVNDuA=</lineHash>
               </position>
             </Favorite>
             <Favorite>
@@ -71,7 +117,7 @@
               <position>
                 <line>1</line>
                 <column>1</column>
-                <lineHash>n15z7tZ5Xf0IYgWQ1eoM4xOah6NS8bVDdNh8akbmyaw=</lineHash>
+                <lineHash>4/VZmSMIGzVv7gMhiGrT+9cPezqsDxML4n2PWI2q/Pc=</lineHash>
               </position>
             </Favorite>
             <Favorite>
@@ -79,141 +125,100 @@
               <path>FiveOhFirstDataCore.Pages\Calendar\CalendarMonthView.razor</path>
               <absolutePath>C:\Users\power\source\repos\power-5000\FiveOhFirstDataCore\FiveOhFirstDataCore.Pages\Calendar\CalendarMonthView.razor</absolutePath>
               <position>
-                <line>5</line>
-                <column>33</column>
-                <lineHash>h7Y444SaAV0Ab3KRbAZ4B4QEycOLXCUMXlemuAsm4yw=</lineHash>
+                <line>1</line>
+                <column>1</column>
+                <lineHash>+Cht3AHiFByYnBnmvTANEJ20GD0JWoR1RNs6tGVNDuA=</lineHash>
               </position>
             </Favorite>
             <Favorite>
-              <name>ICalendarView.cs</name>
-              <path>FiveOhFirstDataCore.Core\Structures\Calendar\ICalendarView.cs</path>
-              <absolutePath>C:\Users\power\source\repos\power-5000\FiveOhFirstDataCore\FiveOhFirstDataCore.Core\Structures\Calendar\ICalendarView.cs</absolutePath>
+              <name>CalendarWeekView.razor.cs</name>
+              <path>FiveOhFirstDataCore.Pages\Calendar\CalendarWeekView.razor.cs</path>
+              <absolutePath>C:\Users\power\source\repos\power-5000\FiveOhFirstDataCore\FiveOhFirstDataCore.Pages\Calendar\CalendarWeekView.razor.cs</absolutePath>
               <position>
                 <line>1</line>
                 <column>1</column>
-                <lineHash>+C3wS7Ft5DyHeLCyPV9r1wsaOWkxFdQYa1IzhmbnvNw=</lineHash>
+                <lineHash>4/VZmSMIGzVv7gMhiGrT+9cPezqsDxML4n2PWI2q/Pc=</lineHash>
               </position>
             </Favorite>
             <Favorite>
-              <name>CalendarEventData.cs</name>
-              <path>FiveOhFirstDataCore.Core\Structures\Calendar\CalendarEventData.cs</path>
-              <absolutePath>C:\Users\power\source\repos\power-5000\FiveOhFirstDataCore\FiveOhFirstDataCore.Core\Structures\Calendar\CalendarEventData.cs</absolutePath>
+              <name>CalendarWeekView.razor</name>
+              <path>FiveOhFirstDataCore.Pages\Calendar\CalendarWeekView.razor</path>
+              <absolutePath>C:\Users\power\source\repos\power-5000\FiveOhFirstDataCore\FiveOhFirstDataCore.Pages\Calendar\CalendarWeekView.razor</absolutePath>
               <position>
                 <line>1</line>
                 <column>1</column>
-                <lineHash>jXa23jK24ZTO5qpFffOpXtpqUAA1XoNAwiSgbwKcpqU=</lineHash>
+                <lineHash>+Cht3AHiFByYnBnmvTANEJ20GD0JWoR1RNs6tGVNDuA=</lineHash>
               </position>
             </Favorite>
             <Favorite>
-              <name>CalendarViewBase.cs</name>
-              <path>FiveOhFirstDataCore.Core\Structures\Calendar\CalendarViewBase.cs</path>
-              <absolutePath>C:\Users\power\source\repos\power-5000\FiveOhFirstDataCore\FiveOhFirstDataCore.Core\Structures\Calendar\CalendarViewBase.cs</absolutePath>
+              <name>MonthView.razor.cs</name>
+              <path>FiveOhFirstDataCore.Pages\Calendar\MonthView.razor.cs</path>
+              <absolutePath>C:\Users\power\source\repos\power-5000\FiveOhFirstDataCore\FiveOhFirstDataCore.Pages\Calendar\MonthView.razor.cs</absolutePath>
               <position>
                 <line>1</line>
                 <column>1</column>
-                <lineHash>g2bAALQMccIdADo56GBkD7Az+UcfyuV+u4VcKaBi3R0=</lineHash>
+                <lineHash>CpSSBVftFbj9isOKfR38xVTIv6f/MKFTqVU9jyJa6Nk=</lineHash>
               </position>
             </Favorite>
             <Favorite>
-              <name>ICalendar.cs</name>
-              <path>FiveOhFirstDataCore.Core\Structures\Calendar\ICalendar.cs</path>
-              <absolutePath>C:\Users\power\source\repos\power-5000\FiveOhFirstDataCore\FiveOhFirstDataCore.Core\Structures\Calendar\ICalendar.cs</absolutePath>
+              <name>MonthView.razor</name>
+              <path>FiveOhFirstDataCore.Pages\Calendar\MonthView.razor</path>
+              <absolutePath>C:\Users\power\source\repos\power-5000\FiveOhFirstDataCore\FiveOhFirstDataCore.Pages\Calendar\MonthView.razor</absolutePath>
               <position>
-                <line>1</line>
-                <column>1</column>
-                <lineHash>jXa23jK24ZTO5qpFffOpXtpqUAA1XoNAwiSgbwKcpqU=</lineHash>
-              </position>
-            </Favorite>
-          </favorites>
-        </Folder>
-        <Folder>
-          <name>Cal-Pop</name>
-          <folders />
-          <favorites>
-            <Favorite>
-              <name>ICalendar.cs</name>
-              <path>FiveOhFirstDataCore.Core\Data\Calendar\ICalendar.cs</path>
-              <absolutePath>C:\Users\power\source\repos\power-5000\FiveOhFirstDataCore\FiveOhFirstDataCore.Core\Data\Calendar\ICalendar.cs</absolutePath>
-              <position>
-                <line>1</line>
-                <column>1</column>
-                <lineHash>+C3wS7Ft5DyHeLCyPV9r1wsaOWkxFdQYa1IzhmbnvNw=</lineHash>
-              </position>
-            </Favorite>
-            <Favorite>
-              <name>ICalendarView.cs</name>
-              <path>FiveOhFirstDataCore.Core\Data\Calendar\ICalendarView.cs</path>
-              <absolutePath>C:\Users\power\source\repos\power-5000\FiveOhFirstDataCore\FiveOhFirstDataCore.Core\Data\Calendar\ICalendarView.cs</absolutePath>
-              <position>
-                <line>1</line>
-                <column>1</column>
-                <lineHash>+C3wS7Ft5DyHeLCyPV9r1wsaOWkxFdQYa1IzhmbnvNw=</lineHash>
-              </position>
-            </Favorite>
-            <Favorite>
-              <name>CalendarEventData.cs</name>
-              <path>FiveOhFirstDataCore.Core\Data\Calendar\CalendarEventData.cs</path>
-              <absolutePath>C:\Users\power\source\repos\power-5000\FiveOhFirstDataCore\FiveOhFirstDataCore.Core\Data\Calendar\CalendarEventData.cs</absolutePath>
-              <position>
-                <line>1</line>
-                <column>1</column>
-                <lineHash>+C3wS7Ft5DyHeLCyPV9r1wsaOWkxFdQYa1IzhmbnvNw=</lineHash>
-              </position>
-            </Favorite>
-            <Favorite>
-              <name>CalendarViewBase.cs</name>
-              <path>FiveOhFirstDataCore.Core\Data\Calendar\CalendarViewBase.cs</path>
-              <absolutePath>C:\Users\power\source\repos\power-5000\FiveOhFirstDataCore\FiveOhFirstDataCore.Core\Data\Calendar\CalendarViewBase.cs</absolutePath>
-              <position>
-                <line>1</line>
-                <column>1</column>
-                <lineHash>g2bAALQMccIdADo56GBkD7Az+UcfyuV+u4VcKaBi3R0=</lineHash>
-              </position>
-            </Favorite>
-            <Favorite>
-              <name>ICalendarView.cs</name>
-              <path>FiveOhFirstDataCore.Core\Structures\Calendar\ICalendarView.cs</path>
-              <absolutePath>C:\Users\power\source\repos\power-5000\FiveOhFirstDataCore\FiveOhFirstDataCore.Core\Structures\Calendar\ICalendarView.cs</absolutePath>
-              <position>
-                <line>1</line>
-                <column>1</column>
-                <lineHash>+C3wS7Ft5DyHeLCyPV9r1wsaOWkxFdQYa1IzhmbnvNw=</lineHash>
-              </position>
-            </Favorite>
-            <Favorite>
-              <name>CalendarEventData.cs</name>
-              <path>FiveOhFirstDataCore.Core\Structures\Calendar\CalendarEventData.cs</path>
-              <absolutePath>C:\Users\power\source\repos\power-5000\FiveOhFirstDataCore\FiveOhFirstDataCore.Core\Structures\Calendar\CalendarEventData.cs</absolutePath>
-              <position>
-                <line>1</line>
-                <column>1</column>
-                <lineHash>jXa23jK24ZTO5qpFffOpXtpqUAA1XoNAwiSgbwKcpqU=</lineHash>
-              </position>
-            </Favorite>
-            <Favorite>
-              <name>CalendarViewBase.cs</name>
-              <path>FiveOhFirstDataCore.Core\Structures\Calendar\CalendarViewBase.cs</path>
-              <absolutePath>C:\Users\power\source\repos\power-5000\FiveOhFirstDataCore\FiveOhFirstDataCore.Core\Structures\Calendar\CalendarViewBase.cs</absolutePath>
-              <position>
-                <line>1</line>
-                <column>1</column>
-                <lineHash>g2bAALQMccIdADo56GBkD7Az+UcfyuV+u4VcKaBi3R0=</lineHash>
-              </position>
-            </Favorite>
-            <Favorite>
-              <name>ICalendar.cs</name>
-              <path>FiveOhFirstDataCore.Core\Structures\Calendar\ICalendar.cs</path>
-              <absolutePath>C:\Users\power\source\repos\power-5000\FiveOhFirstDataCore\FiveOhFirstDataCore.Core\Structures\Calendar\ICalendar.cs</absolutePath>
-              <position>
-                <line>1</line>
-                <column>1</column>
-                <lineHash>jXa23jK24ZTO5qpFffOpXtpqUAA1XoNAwiSgbwKcpqU=</lineHash>
+                <line>6</line>
+                <column>6</column>
+                <lineHash>Khmre1P0wYk4DFble2Uyuxto/NAsaA7+/IYLc3hSzHw=</lineHash>
               </position>
             </Favorite>
           </favorites>
         </Folder>
       </folders>
       <favorites />
+    </Folder>
+    <Folder>
+      <name>CSS</name>
+      <folders />
+      <favorites>
+        <Favorite>
+          <name>MonthView.razor.css</name>
+          <path>FiveOhFirstDataCore.Pages\Calendar\MonthView.razor.css</path>
+          <absolutePath>C:\Users\power\source\repos\power-5000\FiveOhFirstDataCore\FiveOhFirstDataCore.Pages\Calendar\MonthView.razor.css</absolutePath>
+        </Favorite>
+        <Favorite>
+          <name>site.css</name>
+          <path>FiveOhFirstDataCore\wwwroot\css\site.css</path>
+          <absolutePath>C:\Users\power\source\repos\power-5000\FiveOhFirstDataCore\FiveOhFirstDataCore\wwwroot\css\site.css</absolutePath>
+        </Favorite>
+        <Favorite>
+          <name>bootstrap.min.css</name>
+          <path>FiveOhFirstDataCore\wwwroot\css\bootstrap\bootstrap.min.css</path>
+          <absolutePath>C:\Users\power\source\repos\power-5000\FiveOhFirstDataCore\FiveOhFirstDataCore\wwwroot\css\bootstrap\bootstrap.min.css</absolutePath>
+        </Favorite>
+        <Favorite>
+          <name>Calendar.razor.css</name>
+          <path>FiveOhFirstDataCore.Pages\Calendar\Calendar.razor.css</path>
+          <absolutePath>C:\Users\power\source\repos\power-5000\FiveOhFirstDataCore\FiveOhFirstDataCore.Pages\Calendar\Calendar.razor.css</absolutePath>
+        </Favorite>
+        <Favorite>
+          <name>WeekView.razor.css</name>
+          <path>FiveOhFirstDataCore.Pages\Calendar\WeekView.razor.css</path>
+          <absolutePath>C:\Users\power\source\repos\power-5000\FiveOhFirstDataCore\FiveOhFirstDataCore.Pages\Calendar\WeekView.razor.css</absolutePath>
+        </Favorite>
+        <Favorite>
+          <name>testing.css</name>
+          <path>FiveOhFirstDataCore.Core\Structures\Calendar\testing.css</path>
+          <absolutePath>C:\Users\power\source\repos\power-5000\FiveOhFirstDataCore\FiveOhFirstDataCore.Core\Structures\Calendar\testing.css</absolutePath>
+        </Favorite>
+        <Favorite>
+          <name>Hours.razor.css</name>
+          <path>FiveOhFirstDataCore.Pages\Calendar\Hours.razor.css</path>
+          <absolutePath>C:\Users\power\source\repos\power-5000\FiveOhFirstDataCore\FiveOhFirstDataCore.Pages\Calendar\Hours.razor.css</absolutePath>
+          <position>
+            <line>12</line>
+            <column>1</column>
+          </position>
+        </Favorite>
+      </favorites>
     </Folder>
   </folders>
   <favorites />

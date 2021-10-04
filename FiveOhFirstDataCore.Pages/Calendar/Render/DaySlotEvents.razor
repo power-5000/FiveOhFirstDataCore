@@ -1,0 +1,74 @@
+﻿@namespace FiveOhFirstDataCore.Components.Calendar.Render
+
+
+<div class="calendar-events">
+    @{
+        var eventGroups = EventGroups();
+        var lefts = new Dictionary<CalendarEventData, double>();
+    }
+    @for (var date = StartDate; date < EndDate; date = date.AddMinutes(30))
+    {
+        var start = date;
+        var end = start.AddMinutes(30);
+
+        var events = EventsInSlot(start, end);
+        var existingLefts = ExistingLefts(lefts, events);
+
+        @foreach (var item in events)
+        {
+            if (Calendar!.IsLocal)
+            {
+                var width = 90.0 / events.Max(data => eventGroups[Events!.IndexOf(data)]);
+
+                if (!lefts.TryGetValue(item, out var left))
+                {
+                    left = DetermineLeft(existingLefts, width);
+                    lefts.Add(item, left);
+                    existingLefts.Add(left);
+                }
+                var offset = Calendar!.LocalOffset;
+                var eventStart = item.StartTime.Add(offset) < StartDate ? StartDate : item.StartTime.Add(offset);
+                var eventEnd = item.EndTime.Add(offset) > EndDate ? EndDate : item.EndTime.Add(offset);
+                var length = eventStart.Subtract(StartDate).TotalMinutes / 30;
+                var top = 1.5 * length;
+                var height = Math.Max(1.5, 1.5 * eventEnd.Subtract(eventStart).TotalHours * 2);
+
+                @if (item.StartTime >= start && item.StartTime <= end)
+                {
+                    <Event EventData=@item Top=@top Left=@left Width=@width Height=@height />
+                }
+                else if (date == StartDate)
+                {
+                    <Event EventData=@item Top=@top Left=@left Width=@width Height=@height />
+                }
+            }
+            else
+            {
+                var width = 90.0 / events.Max(data => eventGroups[Events!.IndexOf(data)]);
+
+                if (!lefts.TryGetValue(item, out var left))
+                {
+                    left = DetermineLeft(existingLefts, width);
+                    lefts.Add(item, left);
+                    existingLefts.Add(left);
+                }
+
+                var eventStart = item.StartTime.ToEst() < StartDate ? StartDate : item.StartTime.ToEst();
+                var eventEnd = item.EndTime.ToEst() > EndDate ? EndDate : item.EndTime.ToEst();
+                var length = eventStart.Subtract(StartDate).TotalMinutes / 30;
+                var top = 1.5 * length;
+                var height = Math.Max(1.5, 1.5 * eventEnd.Subtract(eventStart).TotalHours * 2);
+
+                @if (item.StartTime >= start && item.StartTime <= end)
+                {
+                    <Event EventData=@item Top=@top Left=@left Width=@width Height=@height />
+                }
+                else if (date == StartDate)
+                {
+                    <Event EventData=@item Top=@top Left=@left Width=@width Height=@height />
+                }
+            }
+        }
+    }
+</div>
+

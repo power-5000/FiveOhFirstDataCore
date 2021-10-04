@@ -1,0 +1,25 @@
+﻿@namespace FiveOhFirstDataCore.Components.Calendar.Render
+
+<div class="calendar-view calendar-month-view">
+    <div class="calendar-view-header">
+        @for (var date = StartDate; date <= StartDate.EndOfWeek(); date = date.AddDays(1))
+        {
+            <div class="calendar-view-header-slot">@date.ToString("dddd")</div>
+        }
+    </div>
+    <div class="calendar-view-content">
+        @for (var week = StartDate; week < EndDate; week = week.AddDays(7))
+        {
+            <div class="calendar-week">
+                <div class="calendar-slots">
+                    @for (var day = week; day < week.AddDays(7); day = day.AddDays(1))
+                    {
+                        <div class="calendar-slot">
+                            <div class="calendar-slot-title">@day.ToString("dd")</div>
+                        </div>
+                    }
+                </div>
+            </div>
+        }
+    </div>
+</div>
